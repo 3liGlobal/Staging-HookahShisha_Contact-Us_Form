@@ -1294,20 +1294,48 @@ ul {
 	width: 50%;
 	margin-left: 70px;
 }
+
 @media only screen and (max-width: 600px) {
 	.zf-templateWidth {
 		width: auto;
 	}
+
 	.tem {
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.col1 {
 		width: 100%;
 	}
+
 	.col2 {
 		width: 100%;
 		margin-left: 0;
+	}
+}
+
+#loaderContainer {
+	display: flex;
+	align-items: center;
+}
+
+#loader {
+	border: 4px solid #f3f3f3;
+	border-top: 4px solid #3498db;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	animation: spin 2s linear infinite;
+	margin-left: 10px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }
