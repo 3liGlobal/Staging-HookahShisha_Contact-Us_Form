@@ -234,7 +234,7 @@
                     </ul>
                 </div><!---------template Container Starts Here---------->
                 <ul>
-                    <li class="zf-fmFooter"><button class="zf-submitColor">Submit</button></li>
+                    <li class="zf-fmFooter"><button class="zf-submitColor" id="zf-submitColor">Submit</button></li>
                 </ul>
             </div><!-- 'zf-templateWrapper' ends -->
         </form>
@@ -259,6 +259,15 @@
                 }
             }, 100);
             $('#loader').hide();
+        });
+    </script>
+
+    <script>
+        $('form').submit(function () {
+            $('#zf-submitColor').prop('disabled', true);
+            setTimeout(function () {
+                $('#zf-submitColor').prop('disabled', false);
+            }, 5000);
         });
     </script>
 
