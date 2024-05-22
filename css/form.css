@@ -342,6 +342,7 @@ ul {
 	font-size: 16px;
 	border-radius: 15px;
 	background-color: #f5f8fa;
+	color: #33475b;
 }
 
 .zf-name .zf-tempContDiv span,
@@ -1295,12 +1296,14 @@ ul {
 	width: 50%;
 	margin-left: 70px;
 }
+
 .zf-form-sBox:focus {
 	border: 1px solid rgba(121, 187, 238, 0.75) !important;
 	-webkit-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
 	-moz-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
 	box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
 }
+
 @media only screen and (max-width: 600px) {
 	.zf-templateWidth {
 		width: auto;
